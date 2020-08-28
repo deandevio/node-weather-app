@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weather</title>
+    <link rel="icon" href="/public/images/weather.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+
+        <p>Use this side to get your weather!</p>
+        <form>
+            <input placeholder="Location" type="text">
+            <button>SEARCH</button>
+        </form>
+        <p id="message-1">
+            {{location}}
+        </p>
+            <p id="message-2">
+            {{forecast}}
+    </p>
+    </div>
+        {{>footer}}
+    <script src="/scripts/app.js"></script>
+</body>
+</html>
